@@ -49,4 +49,17 @@ val thankYouMessage: String = "Спасибо за ваш заказ!"
     println(seconds)
     println(partOfYear)
     println(apogee)
+
+    // Коли-во секунд
+    val totalSeconds: Int = 6480
+
+    // Перевод секунд в часы, минуты и оставшиеся секунды
+    val hours: Int = totalSeconds / 3600
+    val remainingSecondsAfterHours: Int = totalSeconds % 3600
+    val minutes: Int = remainingSecondsAfterHours / 60
+    val seconds: Int = remainingSecondsAfterHours % 60
+    // Используем String.format для отображения чисел с двумя цифрами
+    val formattedTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
+
+    println(formattedTime)
 }
