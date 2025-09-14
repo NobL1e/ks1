@@ -18,4 +18,21 @@ val thankYouMessage: String = "Спасибо за ваш заказ!"
     // Увольнение работника и обновление значения
     numberOfEmployees = 1999 //всего работников
     println("Новое количество работников: $numberOfEmployees")
+
+
+    // Год полета такой же- используем val
+    val year: Int = 1961
+    // Час и мин взлета и посадки меняются,используем var
+    var hour: Int = 9
+    var minute: Int = 7
+    println(year)
+    println(hour)
+    println(minute)
+    // Изменение на время посадки
+    hour = 10
+    minute = 55
+    // Вывод времени
+    print(hour)
+    print(":")
+    print(minute)
 }
